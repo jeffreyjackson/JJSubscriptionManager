@@ -6,7 +6,6 @@
 //
 
 #import "JJSubscriptionManager.h"
-#import "JJSubscriptionManagerConfigs.h"
 #import <StoreKit/StoreKit.h>
 #import "JJStoreKitHelper.h"
 #import "Lockbox.h"

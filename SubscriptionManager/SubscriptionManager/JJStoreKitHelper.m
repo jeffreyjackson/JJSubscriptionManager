@@ -7,7 +7,6 @@
 
 #import "JJStoreKitHelper.h"
 #import "JJSubscriptionManager.h"
-#import "JJSubscriptionManagerConfigs.h"
 #import "Reachability.h"
 
 @interface JJStoreKitHelper () <SKProductsRequestDelegate>
