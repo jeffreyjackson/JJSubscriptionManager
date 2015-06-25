@@ -16,7 +16,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [JJSubscriptionManager sharedManager];
-    [[JJSubscriptionManager sharedManager] clearPurchaseInfo];
     
     JJSubscriptionViewController *vc = [[JJSubscriptionViewController alloc] init];
     self.window.rootViewController = vc;
