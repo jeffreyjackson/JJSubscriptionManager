@@ -1,0 +1,34 @@
+PODS:
+  - Lockbox (2.1.0)
+  - OpenSSL (1.0.203)
+  - Reachability (3.2)
+  - RMStore (0.7.1):
+    - RMStore/Core (= 0.7.1)
+  - RMStore/AppReceiptVerificator (0.7.1):
+    - OpenSSL (~> 1.0.1)
+    - RMStore/Core
+  - RMStore/Core (0.7.1)
+  - RMStore/KeychainPersistence (0.7.1):
+    - RMStore/Core
+  - RMStore/NSUserDefaultsPersistence (0.7.1):
+    - RMStore/Core
+  - RMStore/TransactionReceiptVerificator (0.7.1):
+    - RMStore/Core
+
+DEPENDENCIES:
+  - Lockbox
+  - OpenSSL
+  - Reachability
+  - RMStore
+  - RMStore/AppReceiptVerificator
+  - RMStore/KeychainPersistence
+  - RMStore/NSUserDefaultsPersistence
+  - RMStore/TransactionReceiptVerificator
+
+SPEC CHECKSUMS:
+  Lockbox: 16442da35d9d4286966936763be728a931d589c3
+  OpenSSL: 65f5de70414ee909cea517ded684d8ef855b02b4
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RMStore: 64ba13a9c040e3b7572765d169f77175cd3243e5
+
+COCOAPODS: 0.37.2
