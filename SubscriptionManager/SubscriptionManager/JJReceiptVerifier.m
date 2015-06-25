@@ -63,7 +63,7 @@ static NSNumber *_appReceiptAvailable = nil;
     }
 }
 
-#pragma mark - JCLegacyReceiptVerifierDelegate
+#pragma mark - JJReceiptVerifierDelegate
 
 - (void)receiptVerifier:(id)verifier
      verifiedExpiration:(NSNumber *)expirationIntervalSince1970
