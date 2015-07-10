@@ -144,12 +144,7 @@ NSString *const kLockboxSubscriptionExpirationIntervalKey = @"subscription-expir
 
 - (void)storeKitHelper:(JJStoreKitHelper *)helper didCompleteTransaction:(SKPaymentTransaction *)transaction
 {
-    NSData *receipt = nil;
-    if ([transaction respondsToSelector:@selector(transactionReceipt)]) {
-        receipt = transaction.transactionReceipt;
-    }
-    
-    [self.receiptVerifier verifyReceipt:receipt forProduct:transaction.payment.productIdentifier];
+    [self.receiptVerifier verifyReceipt:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]] forProduct:transaction.payment.productIdentifier];
 }
 
 #pragma mark - Keychain Storage
