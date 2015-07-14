@@ -227,6 +227,7 @@ NSTimeInterval kProductRequestRetryInterval = 15.0;
 		switch (transaction.transactionState)
 		{
 			case SKPaymentTransactionStatePurchased:
+                [[NSNotificationCenter defaultCenter] postNotificationName:JJSubscriptionWasMadeNotification object:nil];
                 [self purchaseTransactionCompleted:transaction];
                 break;
 				
