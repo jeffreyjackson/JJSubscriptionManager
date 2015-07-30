@@ -3,7 +3,7 @@ In-App Purchase Autorenewable Subscription Manager
 
 #### What is it?
 
--  JJSubscriptionManager is a drop in singleton used for managing autorenewable subscriptions, a type of in-app purchase for iOS.  
+-  JJSubscriptionManager is a drop-in singleton used for managing autorenewable subscriptions, a type of in-app purchase for iOS.  
 
 #### Which iOS versions?
 
@@ -18,8 +18,6 @@ In-App Purchase Autorenewable Subscription Manager
 -  Create `ProductIdentifiers.plist` to track Product Identifiers and add to main xcodeproj
 
 ##### Initialize
-
--  Find a place to fire it up, I usually drop it in AppDelegate's didFinishLaunching
 
 ```
 [JJSubscriptionManager sharedManager];
@@ -50,8 +48,6 @@ BOOL purchaseStarted = [[JJSubscriptionManager sharedManager] buyProductWithIden
 ```
 [[JJSubscriptionManager sharedManager] isSubscriptionActive];
 ```
-
-
 
 #### Todo
 
