@@ -11,7 +11,7 @@ In-App Purchase Autorenewable Subscription Manager
 
 #### How do I use it?
 
--  Setting up JJSubscription is pretty straight forward.  It requires at minimum the following 3 steps.
+-  Setting up JJSubscriptionManager is pretty straight forward.  It requires at minimum the following 3 steps.
 
 ##### ProductIdentifiers.plist
 
