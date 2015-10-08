@@ -5,7 +5,7 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 pod 'RMStore'
-pod 'OpenSSL'
+pod 'OpenSSL-Universal'
 pod 'Lockbox'
 pod 'RMStore/AppReceiptVerificator'
 pod 'RMStore/TransactionReceiptVerificator'
