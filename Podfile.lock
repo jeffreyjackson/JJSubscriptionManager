@@ -1,6 +1,7 @@
 PODS:
   - Lockbox (2.1.0)
-  - OpenSSL (1.0.203)
+  - OpenSSL (1.0.204.1)
+  - OpenSSL-Universal (1.0.1.p)
   - Reachability (3.2)
   - RMStore (0.7.1):
     - RMStore/Core (= 0.7.1)
@@ -17,7 +18,8 @@ PODS:
 
 DEPENDENCIES:
   - Lockbox
-  - OpenSSL
+  - OpenSSL-Universal (from `https://github.com/krzyzanowskim/OpenSSL.git`, branch
+    `master`)
   - Reachability
   - RMStore
   - RMStore/AppReceiptVerificator
@@ -25,10 +27,21 @@ DEPENDENCIES:
   - RMStore/NSUserDefaultsPersistence
   - RMStore/TransactionReceiptVerificator
 
+EXTERNAL SOURCES:
+  OpenSSL-Universal:
+    :branch: :master
+    :git: https://github.com/krzyzanowskim/OpenSSL.git
+
+CHECKOUT OPTIONS:
+  OpenSSL-Universal:
+    :commit: 6d0b787284c091a0190e735fe3d04e69a49184d0
+    :git: https://github.com/krzyzanowskim/OpenSSL.git
+
 SPEC CHECKSUMS:
   Lockbox: 16442da35d9d4286966936763be728a931d589c3
-  OpenSSL: 65f5de70414ee909cea517ded684d8ef855b02b4
+  OpenSSL: 7f853fcada78e5162c2183b4d90ebbd0aa02f5ac
+  OpenSSL-Universal: 8746d6f33874f85a30f5be1dc6e696d1b2ebcf01
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RMStore: 64ba13a9c040e3b7572765d169f77175cd3243e5
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

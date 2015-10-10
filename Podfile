@@ -5,7 +5,7 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 pod 'RMStore'
-pod 'OpenSSL-Universal'
+pod 'OpenSSL-Universal', :git => 'https://github.com/krzyzanowskim/OpenSSL.git', :branch => :master
 pod 'Lockbox'
 pod 'RMStore/AppReceiptVerificator'
 pod 'RMStore/TransactionReceiptVerificator'
